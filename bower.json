@@ -1,0 +1,22 @@
+{
+  "name": "mean_demonstration",
+  "authors": [
+    "Blaine Mercado <blainemercado@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-messages": "^1.5.8"
+  }
+}

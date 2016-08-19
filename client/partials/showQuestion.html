@@ -1,0 +1,11 @@
+<div>
+	<a href="/#/dashboard">Dashboard</a> | <a href="/#/questions/{{question._id}}/new_answer">Answer this Question</a>
+	<h2>{{question.question}}</h2>
+	<h3 style="margin-bottom: 30px;">{{question.description}}</h3>
+	<div ng-repeat="answer in answers">
+		<p style="margin-bottom: 0px; padding-bottom: 0px;">{{answer._user.name}}:</p>
+		<h3 style="display: inline-block; margin: 0px 20px; padding: 0px;">{{answer.answer}}</h3>
+		<p style="display: inline-block; margin-left: 200px;">{{answer.likes}} <button ng-click="like(answer)">Like!</button></p>
+		<p style="margin: 0px 30px;">{{answer.support}}</p>
+	</div>
+</div>

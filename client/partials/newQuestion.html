@@ -1,0 +1,12 @@
+<div>
+	<a href="/#/dashboard">Dashboard</a>
+	<h1>New Question</h1>
+	<form name="questionform">
+		Question: <textarea name='question' ng-model="question.question" ng-minlength='10'></textarea>
+		Description (optional): <textarea ng-model="question.description"></textarea>
+		<button ng-click='create(question)'>Submit</button>
+	</form>
+	<div ng-messages="questionform.question.$error">
+		<p ng-message='minlength'>The question needs to be at least 10 characters</p>
+	</div>
+</div>

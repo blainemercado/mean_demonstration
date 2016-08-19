@@ -1,0 +1,13 @@
+<div>
+	<a href="/#/dashboard">Dashboard</a>
+	<h1>{{question.question}}</h1>
+	<h2>{{question.description}}</h2>
+	<form name="answerform">
+		Your Answer: <textarea name="answer" ng-model="answer.answer" ng-minlength="5"></textarea>
+		Supporting details for your answer (optional): <textarea ng-model="answer.support"></textarea>
+		<button ng-click='create(answer)'>Submit</button>
+	</form>
+	<div ng-messages="answerform.answer.$error">
+		<p ng-message='minlength'>Your answer needs to be at least 5 characters long</p>
+	</div>
+</div>
